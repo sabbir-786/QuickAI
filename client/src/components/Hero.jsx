@@ -1,6 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
+import { assets } from '../assets/assets';
 
 const Hero = () => {
+
+    const navigate = useNavigate();
     return (
         <div className='px-4 sm:px-20 xl:px-32 relative inline-flex flex-col w-full justify-center items-center
        bg-white min-h-screen overflow-hidden'>
@@ -41,12 +45,18 @@ const Hero = () => {
                     and enhance your workflow
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-1000">
-                    <button className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-white font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50">
-                        Get Started
+                    <button onClick={() => {
+                        navigate('/ai')
+                    }} className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-white font-semibold hover:from-blue-600 hover:to-purple-700 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50">
+                        Start Creating Now
                     </button>
                     <button className="px-8 py-4 border-2 border-gray-300 bg-white/80 backdrop-blur-md rounded-full text-gray-700 font-semibold hover:border-purple-500 hover:text-purple-600 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-gray-200">
-                        Learn More
+                        Watch Demo
                     </button>
+                </div>
+
+                <div className='flex items-center gap-4 mt-8 mx-auto text-gray-600 justify-center'>
+                    <img src={assets.user_group} alt="" className='h-8' /> Trusted by 10K+ people
                 </div>
             </div>
 

@@ -2,6 +2,20 @@
 
 An AI-powered SaaS platform built with the PERN stack (PostgreSQL, Express.js, React.js, Node.js) to provide users with advanced AI tools, seamless authentication, and premium features.
 
+
+## 📸 Screenshots
+### 🧠 AI Dashboard
+![AI Dashboard](./assets/dashboard.png)
+
+### 🔐 Clerk Sign In
+![Clerk Sign In](./assets/signin.png)
+
+
+
+### ✍️ Tool Generator Page
+![Tool Generator](./assets/tool-generator.png)
+
+
 ## 🚀 Features
 
 - 🌐 Full-stack PERN architecture (PostgreSQL, Express.js, React.js, Node.js)

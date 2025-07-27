@@ -10,6 +10,7 @@ import RemoveBackground from './pages/RemoveBackground'
 import RemoveObject from './pages/RemoveObject'
 import ReviewResume from './pages/ReviewResume'
 import Community from './pages/Community'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -26,7 +27,6 @@ const App = () => {
           <Route path='review-resume' element={<ReviewResume />} />
           <Route path='community' element={<Community />} />
         </Route>
-
       </Routes>
 
     </div>

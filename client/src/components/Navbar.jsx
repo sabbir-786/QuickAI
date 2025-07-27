@@ -17,12 +17,27 @@ const Navbar = () => {
                 navigate('/')
             }} />
 
-            {
-                user ? <UserButton /> : (
-                    <button onClick={openSignIn} className='flex items-center gap-2 rounded-full text-sm cursor-pointer bg-primary text-white px-10 py-2.5'>Get Started <ArrowRight className='w-4 h-4' /></button>
-                )
-            }
-
+            {/* User section */}
+            <div className="flex items-center space-x-4">
+                {user ? (
+                    <div className="flex items-center space-x-3">
+                        <UserButton
+                            appearance={{
+                                elements: {
+                                    avatarBox: "w-8 h-8"
+                                }
+                            }}
+                        />
+                    </div>
+                ) : (
+                    <button
+                        onClick={openSignIn}
+                        className="flex items-center gap-2 rounded-full text-sm cursor-pointer bg-primary text-white px-6 py-2.5 hover:bg-primary/90 transition-colors"
+                    >
+                        Get Started <ArrowRight className="w-4 h-4" />
+                    </button>
+                )}
+            </div>
 
 
         </div>

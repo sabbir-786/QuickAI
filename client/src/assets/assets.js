@@ -5,10 +5,12 @@ import star_icon from "./star_icon.svg";
 import star_dull_icon from "./star_dull_icon.svg";
 import profile_img_1 from "./profile_img_1.png";
 import arrow_icon from "./arrow_icon.svg";
-import { SquarePen, Hash, Image, Eraser, Scissors, FileText } from 'lucide-react'
 import ai_gen_img_1 from "./ai_gen_img_1.png";
 import ai_gen_img_2 from "./ai_gen_img_2.png";
 import ai_gen_img_3 from "./ai_gen_img_3.png";
+
+import { Edit3, Hash, Image, Scissors, Target, FileText } from 'lucide-react';
+
 
 export const assets = {
     logo,
@@ -20,50 +22,71 @@ export const assets = {
     arrow_icon,
 };
 
-export const AiToolsData = [
+export const tools = [
     {
-        title: 'AI Article Writer',
-        description: 'Generate high-quality, engaging articles on any topic with our AI writing technology.',
-        Icon: SquarePen,
-        bg: { from: '#3588F2', to: '#0BB0D7' },
-        path: '/ai/write-article'
+        id: 1,
+        title: "AI Article Writer",
+        description: "Generate engaging articles with AI technology.",
+        icon: Edit3,
+        color: "from-blue-500 to-cyan-500",
+        bgColor: "bg-blue-500",
+        delay: "0ms",
+        link: "/ai/write-article"
     },
     {
-        title: 'Blog Title Generator',
-        description: 'Find the perfect, catchy title for your blog posts with our AI-powered generator.',
-        Icon: Hash,
-        bg: { from: '#B153EA', to: '#E549A3' },
-        path: '/ai/blog-titles'
+        id: 2,
+        title: "Blog Title Generator",
+        description: "Create catchy blog titles instantly.",
+        icon: Hash,
+        color: "from-purple-500 to-pink-500",
+        bgColor: "bg-purple-500",
+        delay: "100ms",
+        link: "/ai/blog-titles"
     },
     {
-        title: 'AI Image Generation',
-        description: 'Create stunning visuals with our AI image generation tool, Experience the power of AI ',
-        Icon: Image,
-        bg: { from: '#20C363', to: '#11B97E' },
-        path: '/ai/generate-images'
+        id: 3,
+        title: "AI Image Generation",
+        description: "Generate stunning images with AI.",
+        icon: Image,
+        color: "from-green-500 to-emerald-500",
+        bgColor: "bg-green-500",
+        delay: "200ms",
+        link: "/ai/generate-images"
     },
     {
-        title: 'Background Removal',
-        description: 'Effortlessly remove backgrounds from your images with our AI-driven tool.',
-        Icon: Eraser,
-        bg: { from: '#F76C1C', to: '#F04A3C' },
-        path: '/ai/remove-background'
+        id: 4,
+        title: "Background Removal",
+        description: "Remove backgrounds from images easily.",
+        icon: Scissors,
+        color: "from-orange-500 to-red-500",
+        bgColor: "bg-orange-500",
+        delay: "300ms",
+        link: "/ai/remove-background"
     },
     {
-        title: 'Object Removal',
-        description: 'Remove unwanted objects from your images seamlessly with our AI object removal tool.',
-        Icon: Scissors,
-        bg: { from: '#5C6AF1', to: '#427DF5' },
-        path: '/ai/remove-object'
+        id: 5,
+        title: "Object Removal",
+        description: "Remove unwanted objects from photos.",
+        icon: Target,
+        color: "from-blue-600 to-indigo-600",
+        bgColor: "bg-blue-600",
+        delay: "400ms",
+        link: "/ai/remove-object"
     },
     {
-        title: 'Resume Reviewer',
-        description: 'Get your resume reviewed by AI to improve your chances of landing your dream job.',
-        Icon: FileText,
-        bg: { from: '#12B7AC', to: '#08B6CE' },
-        path: '/ai/review-resume'
+        id: 6,
+        title: "Resume Review",
+        description: "Get AI-powered resume feedback.",
+        icon: FileText,
+        color: "from-teal-500 to-cyan-500",
+        bgColor: "bg-teal-500",
+        delay: "500ms",
+        link: "/ai/review-resume"
     }
-]
+];
+
+
+
 
 export const dummyTestimonialData = [
     {
